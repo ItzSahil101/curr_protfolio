@@ -21,13 +21,13 @@ import SassSvg from "@/public/icons/sass.svg";
 import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
-import ReactSvg from "@/public/icons/Reactjs.svg";
-import NodeSvg from "@/public/icons/Nodejs.svg";
-import MongoSvg from "@/public/icons/MongoDB.svg";
-import GitSvg from "@/public/icons/Git.svg";
-import DockerSvg from "@/public/icons/Docker.svg";
-import AWSSvg from "@/public/icons/AWS.svg";
-import PostmanSvg from "@/public/icons/Postman.svg";
+import ReactSvg from "@/public/icons/reactjs.svg";
+import NodeSvg from "@/public/icons/nodejs.svg";
+import MongoSvg from "@/public/icons/mongodb.svg";
+import GitSvg from "@/public/icons/git.svg";
+import DockerSvg from "@/public/icons/docker.svg";
+import AWSSvg from "@/public/icons/aws.svg";
+import PostmanSvg from "@/public/icons/postman.svg";
 
 import type { SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
