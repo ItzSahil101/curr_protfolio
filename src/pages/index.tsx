@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 import { NextSeo } from "next-seo";
 
 import LandingHero from "@/components/landing-hero";
@@ -10,34 +9,34 @@ import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Home() {
+  const description =
+    "Explore Sahil Yogee's portfolio featuring full-stack web development, Flutter, Python, C, cybersecurity, and emerging technologies.";
+
   return (
     <>
       <NextSeo
-        title="Amit Chauhan | Software Developer"
-        description="Explore the professional portfolio of Amit Chauhan, a skilled Software Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        title="Sahil Yogee | Full-Stack Developer"
+        description={description}
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Amit Chauhan - Software Developer",
-          description:
-            "Dive into the world of web development with Amit Chauhan. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+          title: "Sahil Yogee | Full-Stack Developer",
+          description,
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Sahil Yogee developer portfolio",
             },
           ],
           siteName: siteMetadata.siteName,
           type: "website",
         }}
-        twitter={{
-          cardType: "summary_large_image",
-        }}
+        twitter={{ cardType: "summary_large_image" }}
         additionalMetaTags={[
           {
-            property: "keywords",
+            name: "keywords",
             content:
-              "React Developer, Software Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Portfolio, UI/UX, React.js, Frontend Development, Web Development, JavaScript Developer, Responsive Design",
+              "Sahil Yogee, Full-Stack Developer, MERN Stack, JavaScript, TypeScript, React, Node.js, Python, C, Flutter, Cybersecurity, Robotics, IoT",
           },
         ]}
       />
@@ -49,6 +48,7 @@ export default function Home() {
           />
         )}
       </Head>
+
       <LandingHero />
       <SkillsShowcase skills={SKILLS_DATA} />
       <ProjectShowcase projects={PROJECT_SHOWCASE} />

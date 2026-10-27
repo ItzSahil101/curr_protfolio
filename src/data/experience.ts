@@ -2,35 +2,47 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Software Developer",
+    title: "Mobile App Development & Deployment",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "Flutter, AWS & Firebase",
+      href: "https://flutter.dev/",
     },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
+    date: "2026",
+    location: "Personal Projects",
+    description:
+      "Expanded into Flutter mobile app development and production deployment workflows. Worked with AWS, Dokploy, Firebase, APIs, databases, and authentication while contributing to the LovyDate application.",
   },
   {
-    title: "Engineering Trainee",
+    title: "C Programming & Cybersecurity Foundations",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "C, Linux & Networking",
+      href: "https://www.kernel.org/",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
+    date: "2025",
+    location: "Self-Directed Learning",
     description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+      "Started learning C, networking fundamentals, Linux, OSINT, and ethical hacking concepts. Strengthened existing programming skills while exploring systems-level computing and cybersecurity through hands-on learning.",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Python & Computer Vision",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "Python & OpenCV",
+      href: "https://opencv.org/",
     },
-    date: "Winter - 2022",
-    location: "Remote",
+    date: "2024",
+    location: "Self-Directed Learning",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+      "Expanded beyond web development into Python, OpenCV, and computer vision. Explored practical programming concepts and built projects to apply new skills.",
+  },
+  {
+    title: "Full-Stack Web Development",
+    organisation: {
+      name: "MERN Stack",
+      href: "https://www.mongodb.com/mern-stack",
+    },
+    date: "2023",
+    location: "Self-Directed Learning",
+    description:
+      "Started my programming journey with full-stack web development, learning JavaScript, React, Node.js, Express, and MongoDB. Built a foundation in frontend interfaces, backend APIs, databases, and end-to-end application development.",
   },
 ];

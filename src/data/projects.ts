@@ -1,125 +1,119 @@
 import { type ProjectCardProps } from "@/components/projects/project-card";
 import { type ProjectShowcaseListItem } from "@/components/projects/project-showcase-list";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
-    title: "Json Tree",
+    title: "LovyDate",
     href: "/projects",
-    tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
+    tags: ["Flutter", "Node.js", "Express", "PostgreSQL", "Redis"],
     image: {
-      LIGHT: "/images/projects/jsontreeLight.webp",
-      DARK: "/images/projects/jsontreeDark.webp",
+      LIGHT: "/images/pic/lovydate.png",
+      DARK: "/images/pic/lovydate.png",
     },
   },
   {
     index: 1,
-    title: "Many Games",
+    title: "CafeMate",
     href: "/projects",
-    tags: [
-      "Reactjs",
-      "Tailwindcss",
-      "Scss",
-      "Vite",
-      "React-router-dom",
-      "Redux",
-      "Vercel",
-    ],
+    tags: ["React", "Node.js", "Express", "MongoDB"],
     image: {
-      LIGHT: "/images/projects/manyGamesLight.webp",
-      DARK: "/images/projects/manyGamesDark.webp",
+      LIGHT: "/images/pic/cafemate.png",
+      DARK: "/images/pic/cafemate.png",
     },
   },
   {
     index: 2,
-    title: "Kanban",
+    title: "Old Portfolio",
     href: "/projects",
-    tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     image: {
-      LIGHT: "/images/projects/kanbanLight.webp",
-      DARK: "/images/projects/kanbanDark.webp",
+      LIGHT: "/images/pic/protfolio.png",
+      DARK: "/images/pic/protfolio.png",
     },
   },
 ];
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
-    name: "Json tree",
-    favicon: "/images/projects/logos/jsontree.ico",
-    imageUrl: [
-      "/images/projects/jsontreeLight.webp",
-      "/images/projects/jsontreeDark.webp",
-    ],
-    description:
-      "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/jsontree",
-    liveWebsiteHref: "https://jsontree.vercel.app",
-  },
-  {
-    name: "Kanban app",
-    favicon: "/images/projects/logos/kanban.ico",
-    imageUrl: [
-      "/images/projects/kanbanLight.webp",
-      "/images/projects/kanbanDark.webp",
-      "/images/projects/kanbanCardLight.webp",
-    ],
-    description:
-      "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/kanban",
-    liveWebsiteHref: "https://kannban-board.vercel.app",
-  },
-  {
-    name: "Many Games",
-    favicon: "/images/projects/logos/manygames.ico",
-    imageUrl: [
-      "/images/projects/manyGamesDark.webp",
-      "/images/projects/manyGamesLight.webp",
-      "/images/projects/manyGames2048.webp",
-      "/images/projects/manyGamesPuzzle.webp",
-      "/images/projects/manyGamesWordle.webp",
-    ],
-    description:
-      "Many short and fun games using Reactjs, Typescript and Tailwindcss with collaboration with other developers",
-    sourceCodeHref: "https://github.com/BUMBAIYA/ManyGames",
-    liveWebsiteHref: "https://manygames.vercel.app",
-  },
-  {
-    name: "My portfolio",
+    name: "LovyDate",
     favicon: "/favicon.ico",
-    imageUrl: [
-      "/images/projects/portfolioDark.webp",
-      "/images/projects/portfolioLight.webp",
-    ],
+    imageUrl: ["/images/pic/lovydate.png"],
     description:
-      "My personal portfolio website made using Nextjs, tailwindcss and framer motion.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/amitchauhan-v2",
-    liveWebsiteHref: siteMetadata.siteUrl,
+      "A dating app featuring authentication, profiles, discovery, matching, chat, and social feeds. Built with Flutter and a Node.js backend.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "https://lovydate.fun",
   },
   {
-    name: "Covid Tracker",
-    favicon: "/images/projects/logos/covidtracker.ico",
-    imageUrl: [
-      "/images/projects/covidTracker.webp",
-      "/images/projects/covidTrackerMap.webp",
-      "/images/projects/covidTrackerTable.webp",
-    ],
+    name: "CafeMate",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/cafemate.png"],
     description:
-      "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
-    sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
-    liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
+      "A cafe ordering and management application built with the MERN stack, featuring menu browsing, cart management, and ordering workflows.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "https://notsahil.vercel.app",
   },
   {
-    name: "Stock predictor",
-    favicon: "/images/projects/logos/stockpredictor.ico",
-    imageUrl: [
-      "/images/projects/stockPredictor.webp",
-      "/images/projects/stockPredictorCandleChart.webp",
-      "/images/projects/stockPredictorCompareChart.webp",
-      "/images/projects/stockPredictorLineChart.webp",
-    ],
+    name: "Old Portfolio",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/protfolio.png"],
     description:
-      "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
-    sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
+      "My previous personal portfolio showcasing my development journey, technical skills, and projects.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "https://notsahil.vercel.app",
+  },
+  {
+    name: "NepCart",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/nepcart.png"],
+    description:
+      "An e-commerce shopping platform for online sales, product browsing, and order management with a user-friendly interface.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "https://nepcart.vercel.app",
+  },
+  {
+    name: "AI Code Reviewer",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/ai-code-reviewer.png"],
+    description:
+      "An AI-powered website where you can submit code for automated review, feedback, and suggestions to improve code quality.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "https://ai-crx.vercel.app",
+  },
+  {
+    name: "Jarvis AI",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/jarvis-ai.jpg"],
+    description:
+      "A Python-based PC assistant with voice commands and automation features, built with a graphical user interface.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "",
+  },
+  {
+    name: "Item Detector",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/item-detector.jpg"],
+    description:
+      "A Python computer vision project that detects and predicts items, with a user-friendly graphical interface.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "",
+  },
+  {
+    name: "Face Detection",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/face-detection.jpg"],
+    description:
+      "A computer vision project that detects faces from live camera feeds or images, with a graphical interface.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "",
+  },
+  {
+    name: "Automation Software",
+    favicon: "/favicon.ico",
+    imageUrl: ["/images/pic/automation-software.jpg"],
+    description:
+      "A Python GUI automation tool designed to automate repetitive messaging and email workflows.",
+    sourceCodeHref: "",
+    liveWebsiteHref: "",
   },
 ];

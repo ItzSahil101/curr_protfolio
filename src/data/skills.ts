@@ -1,178 +1,110 @@
 import {
+  SiBootstrap,
+  SiC,
+  SiEslint,
   SiExpress,
-  SiSocketdotio,
-  SiPrisma,
+  SiFirebase,
+  SiFlutter,
+  SiGithub,
+  SiLinux,
   SiNextdotjs,
-  SiFlask,
+  SiSocketdotio,
+  SiTailwindcss,
+  SiThreedotjs,
+  SiVercel,
+  SiWebpack,
 } from "react-icons/si";
-import {
-  FramerMotionIcon,
-  ReactRouterDomIcon,
-  VitePwaIcon,
-} from "@/components/icons";
-import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
-// Languages
 import HtmlSvg from "@/public/icons/html.svg";
-import CsssSvg from "@/public/icons/css.svg";
+import CSSSvg from "@/public/icons/css.svg";
 import SassSvg from "@/public/icons/sass.svg";
 import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
+import ReactSvg from "@/public/icons/Reactjs.svg";
+import NodeSvg from "@/public/icons/Nodejs.svg";
+import MongoSvg from "@/public/icons/MongoDB.svg";
+import GitSvg from "@/public/icons/Git.svg";
+import DockerSvg from "@/public/icons/Docker.svg";
+import AWSSvg from "@/public/icons/AWS.svg";
+import PostmanSvg from "@/public/icons/Postman.svg";
 
-// Libraries
-import ReactjsSvg from "@/public/icons/reactjs.svg";
-import SolidjsSvg from "@/public/icons/solidjs.svg";
-import ReduxSvg from "@/public/icons/redux.svg";
-import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
-import MuiSvg from "@/public/icons/mui.svg";
-import ViteSvg from "@/public/icons/vite.svg";
-
-// Backend
-import NodejsSvg from "@/public/icons/nodejs.svg";
-
-// Database and ORMS
-import MongoDBSvg from "@/public/icons/mongodb.svg";
-import PostgressSvg from "@/public/icons/postgresql.svg";
-
-// Tools and Tech
-import GitSvg from "@/public/icons/git.svg";
-import DockerSvg from "@/public/icons/docker.svg";
-import AwsSvg from "@/public/icons/aws.svg";
-import PostmanSvg from "@/public/icons/postman.svg";
+import type { SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
-    sectionName: "Languages",
+    sectionName: "Programming Languages",
     skills: [
-      {
-        name: "HTML",
-        icon: HtmlSvg,
-      },
-      {
-        name: "CSS",
-        icon: CsssSvg,
-      },
-      {
-        name: "SASS",
-        icon: SassSvg,
-      },
-      {
-        name: "Javascript",
-        icon: JavascriptSvg,
-      },
-      {
-        name: "Typescript",
-        icon: TypescriptSvg,
-      },
-      {
-        name: "Python",
-        icon: PythonSvg,
-      },
+      { name: "JavaScript", icon: JavascriptSvg },
+      { name: "TypeScript", icon: TypescriptSvg },
+      { name: "Python", icon: PythonSvg },
+      { name: "C", icon: SiC },
     ],
   },
   {
-    sectionName: "Libraries and Frameworks",
+    sectionName: "Frontend Engineering",
     skills: [
-      {
-        name: "Reactjs",
-        icon: ReactjsSvg,
-      },
-      {
-        name: "Nextjs",
-        icon: SiNextdotjs,
-      },
-      {
-        name: "Solidjs",
-        icon: SolidjsSvg,
-      },
-      {
-        name: "React Router Dom",
-        icon: ReactRouterDomIcon,
-      },
-      {
-        name: "Redux",
-        icon: ReduxSvg,
-      },
-      {
-        name: "Tailwindcss",
-        icon: TailwindcssSvg,
-      },
-      {
-        name: "MUI",
-        icon: MuiSvg,
-      },
-      {
-        name: "Framer motion",
-        icon: FramerMotionIcon,
-      },
-      {
-        name: "Vite",
-        icon: ViteSvg,
-      },
-      {
-        name: "Vite PWA",
-        icon: VitePwaIcon,
-      },
+      { name: "HTML5", icon: HtmlSvg },
+      { name: "CSS3", icon: CSSSvg },
+      { name: "React.js", icon: ReactSvg },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Bootstrap", icon: SiBootstrap },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Sass / SCSS", icon: SassSvg },
+      { name: "React Router", icon: ReactSvg },
+      { name: "Next.js App Router", icon: SiNextdotjs },
+      { name: "Framer Motion", icon: ReactSvg },
+      { name: "React Hook Form", icon: ReactSvg },
+      { name: "Responsive Design", icon: CSSSvg },
+      { name: "SEO", icon: HtmlSvg },
+      { name: "Three.js", icon: SiThreedotjs },
+      { name: "Webpack", icon: SiWebpack },
+      { name: "ESLint", icon: SiEslint },
     ],
   },
   {
-    sectionName: "Backend",
+    sectionName: "Backend & APIs",
     skills: [
-      {
-        name: "Nodejs",
-        icon: NodejsSvg,
-      },
-      {
-        name: "Express",
-        icon: SiExpress,
-      },
-      {
-        name: "Socket.io",
-        icon: SiSocketdotio,
-      },
-      {
-        name: "Flask",
-        icon: SiFlask,
-      },
+      { name: "Node.js", icon: NodeSvg },
+      { name: "Express.js", icon: SiExpress },
+      { name: "REST APIs", icon: NodeSvg },
+      { name: "Socket.IO", icon: SiSocketdotio },
+      { name: "Postman", icon: PostmanSvg },
     ],
   },
   {
-    sectionName: "Databases and ORMs",
+    sectionName: "Databases & Realtime",
     skills: [
-      {
-        name: "MongoDB",
-        icon: MongoDBSvg,
-      },
-      {
-        name: "Postgress",
-        icon: PostgressSvg,
-      },
-      {
-        name: "Prisma",
-        icon: SiPrisma,
-      },
+      { name: "MongoDB", icon: MongoSvg },
+      { name: "Firebase", icon: SiFirebase },
     ],
   },
   {
-    sectionName: "Tools and Technologies",
+    sectionName: "Mobile Development",
+    skills: [{ name: "Flutter", icon: SiFlutter }],
+  },
+  {
+    sectionName: "Cloud & Deployment",
     skills: [
-      {
-        name: "Git",
-        icon: GitSvg,
-      },
-      {
-        name: "Docker",
-        icon: DockerSvg,
-      },
-      {
-        name: "AWS",
-        icon: AwsSvg,
-      },
-      {
-        name: "Postman",
-        icon: PostmanSvg,
-      },
+      { name: "AWS", icon: AWSSvg },
+      { name: "Dokploy", icon: DockerSvg },
+      { name: "Vercel", icon: SiVercel },
+      { name: "Docker", icon: DockerSvg },
+    ],
+  },
+  {
+    sectionName: "Developer Tools",
+    skills: [
+      { name: "Git", icon: GitSvg },
+      { name: "GitHub", icon: SiGithub },
+    ],
+  },
+  {
+    sectionName: "Networking & Cybersecurity",
+    skills: [
+      { name: "Networking", icon: SiLinux },
+      { name: "Linux", icon: SiLinux },
+      { name: "OSINT", icon: SiLinux },
     ],
   },
 ];

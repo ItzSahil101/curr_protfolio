@@ -3,44 +3,43 @@ import { NextSeo } from "next-seo";
 import AboutHero from "@/components/about-hero";
 import ExperienceShowcaseList from "@/components/experience/experience-showcase-list";
 import { EXPERIENCE } from "@/data/experience";
-import { EDUCATION } from "@/data/education";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function About() {
+  const description =
+    "Learn about Sahil Yogee, a developer focused on full-stack web and mobile development, with interests in cybersecurity, AI/ML, robotics, and IoT.";
+
   return (
     <>
       <NextSeo
-        title="About Amit Chauhan | Software Developer"
-        description="Learn more about Amit Chauhan, a dedicated Software Developer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
+        title="About Sahil Yogee | Developer"
+        description={description}
         canonical={`${siteMetadata.siteUrl}/about`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/about`,
-          title: "Learn About Amit Chauhan - Software Developer",
-          description:
-            "Dive into the story of Amit Chauhan, a Software Developer. Uncover the experiences, skills, and passion that fuel a commitment to delivering exceptional web solutions.",
+          title: "About Sahil Yogee",
+          description,
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Sahil Yogee developer portfolio",
             },
           ],
           siteName: siteMetadata.siteName,
           type: "website",
         }}
-        twitter={{
-          cardType: "summary_large_image",
-        }}
+        twitter={{ cardType: "summary_large_image" }}
         additionalMetaTags={[
           {
-            property: "keywords",
+            name: "keywords",
             content:
-              "Software Developer portfolio, Software Developer, React Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Professional Journey, Skills, Passion for Web Development",
+              "Sahil Yogee, developer journey, MERN Stack, Flutter, Python, C, ethical hacking, networking, AI, robotics, IoT",
           },
         ]}
       />
+
       <AboutHero />
       <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
-      <ExperienceShowcaseList title="Education" details={EDUCATION} />
     </>
   );
 }
